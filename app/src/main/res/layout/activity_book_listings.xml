@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewBook"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_below="@id/imageViewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_below="@id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_below="@id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:layout_below="@id/textViewPrice"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:layout_below="@id/buttonRent"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"/>
+</RelativeLayout>
